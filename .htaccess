@@ -1,0 +1,18 @@
+RewriteEngine on
+
+#Manejo de errores de Apache.
+ErrorDocument 401 /error
+ErrorDocument 403 /error
+ErrorDocument 404 /error
+ErrorDocument 500 /error
+
+RewriteRule ^error error.php
+RewriteRule ^inicio index.php
+RewriteRule ^registro register.php
+RewriteRule ^login login.php
+RewriteRule ^articulos articles.php
+RewriteRule ^perfil profile.php
+RewriteRule ^salir close.php
+
+RewriteRule ^verificar/(.+) verificar.php?verificar=$1
+RewriteRule ^user/(.+) user.php?username=$1

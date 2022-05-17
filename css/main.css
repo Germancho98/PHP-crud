@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Reem+Kufi&display=swap');
+
+/*=============================================
+Globals
+=============================================*/
+:root{
+	/* Fonst */
+	--Lato: 'Lato', sans-serif;
+	--Reem: 'Reem Kufi', sans-serif;
+	/* Color */
+	--white:#ffffff;
+	--black:#000000;
+
+}
+
+body{
+	overflow-x: hidden;
+	font-family: var(--fontReem);
+	background: #f1f1f1;
+}
+
+.index-1{
+	z-index: 1000;
+}
+
+.pt-2{padding-top: 20px;}
+.pt-4{padding-top: 40px;}
+.pointer{cursor: pointer;}
+.like{color: red!important;}
+
+/*=============================================
+SCALAR LAS IMAGENES EN CARDS
+=============================================*/
+
+.scalar{
+    position: relative;
+    overflow: hidden;
+}
+
+.scalar a img{
+    max-width: 100%;
+    -webkit-transition: all .5s ease;
+}
+
+.scalar:hover a img{
+    -webkit-transform: scale(1.1);
+}
+
+
+/*=============================================
+HEADER
+=============================================*/
+header nav a.brand-logo img{
+	margin-top: 10px;
+}
+
+header nav li.contification_li a span.counst{
+	position: absolute;
+	top: 5px;
+	margin-left: 16px;
+	font-size: 12px;
+	height: 25px;
+	width: 25px;
+	background: #e53935;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 50px;
+}
+
+header nav li.contification_li ul#open_noti{
+	width: 300px!important;
+}
+
+/*=============================================
+HERO
+=============================================*/
+
+section.section-hero{
+	margin-top: -50px;
+}
+div.hero{
+	background: url('../images/hero.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.hero .container-hero{
+	position: absolute;
+	width: 50%;
+	top: 30%;
+}
+
+.hero .container-hero h2{
+	font-family: var(--fontLato);
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: left;
+	font-weight: bold;
+	letter-spacing: 0.33rem;
+	color: var(--white);
+}
+
+.hero .container-hero p{
+	font-family: var(--fontReem);
+	color: var(--white);
+	text-align: left;
+	letter-spacing: 0.33rem;
+	font-size: 14px;
+}
+
+/*=============================================
+PAGINAS DE REGISTRO Y LOGIN
+=============================================*/
+
+.container-form{
+	padding-top: 120px;
+}
+
+.container-form form input[type="submit"]{
+	color: var(--white);
+}
+
+.container-form .card{
+	padding: 20px 15px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px){
+	.container-form .card{
+		width: 100%;
+	}
+}
+
+/*=============================================
+PAGINAS PERFIL DE USUSAREIO
+=============================================*/
+
+main.user-profile .content-parallx{
+	margin-top: 100px;
+}
+
+main.user-profile .content-parallx figuer{
+	margin: 0;
+	padding: 0;
+}
+
+main.user-profile .content-parallx h2.name-user{
+	color: var(--white);
+	font-family: var(--fontLato);
+	letter-spacing: 0.33rem;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+main.user-profile article{
+	padding: 20px 15px;
+}
+
+main.user-profile article h3{
+	color: #212121;
+	font-family: var(--fontLato);
+	letter-spacing: 0.33rem;
+	text-transform: uppercase;
+	font-size: 23px;
+}
+
+main.user-profile article figcaption{
+	color: #212121;
+	font-family: var(--fontLato);
+	letter-spacing: 0.22rem;
+	font-size: 16px;
+}
+
+main.user-profile .articles-post-user-profile{
+	padding: 50px 0;
+}
+
+.card .card-content a span{
+	font-family: var(--Lato);
+	font-size: 25px;
+	color: #212121;
+	font-weight: 500;
+	transition: all .3s ease;
+}
+
+.card .card-content a span:hover{
+	color: #1e88e5!important;
+}
+
+.card .card-content p{
+	padding-bottom: 10px;
+}
+
+.card .card-content .card-footer{
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+}
+
+.card .card-content .card-footer a{
+	margin-right: 20px;
+}
+
+.card .card-content .card-footer a i{
+	color: #515A5A;
+	font-size: 25px;
+}
+
+.ahutor {
+    margin-top: -55px;
+    z-index: 100;
+    position: relative;
+    border: 5px solid var(--white);
+    border-radius: 50px;
+}
+
+.btn-banner{
+	position: absolute;
+	bottom: 10%;
+	right: 1%;
+}
+
+.btn-banner i{
+	font-size: 30px;
+	color: #fff;
+}
+
+/*=============================================
+FOOTER
+=============================================*/
+
+footer{
+	padding: 15px 0;
+}
+
+footer p.copy{
+	color: var(--white);
+	margin: 0;
+}
+
+
+/*=============================================
+PAGE ITEM
+=============================================*/
+
+.content-ahutor .ahutor-flex{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+}
+
+.content-ahutor .ahutor-flex .picture-img{
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.content-ahutor .ahutor-flex .details-ahutor p.ahutor-name{
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.18rem;
+}
+
+.card-footer-item{
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+}
+
+.card-footer-item a{
+	margin-right: 20px;
+}
+
+.card-footer-item a i{
+	color: #515A5A;
+	font-size: 30px;
+}
+
+/*=============================================
+PAGE ITEM COMMENTS
+=============================================*/
+
+.content-commnets .ahutor-flex{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+}
+
+.content-commnets .ahutor-flex .picture-img{
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.content-commnets .ahutor-flex .details-ahutor p.ahutor-name{
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.18rem;
+}
